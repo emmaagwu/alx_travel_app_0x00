@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Listing, Booking
 
-class ListingSerializer(serializers.ModelSerializer):
+class Listing(serializers.ModelSerializer):
     class Meta:
         model = Listing
         fields = [
@@ -16,7 +16,7 @@ class ListingSerializer(serializers.ModelSerializer):
         ]
 
 
-class BookingSerializer(serializers.ModelSerializer):
+class Booking(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = [
